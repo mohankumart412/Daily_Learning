@@ -1,0 +1,54 @@
+1. File and Directory Operations:
+
+os.rename(src, dst): Rename the file or directory from src to dst.
+os.remove(path): Remove (delete) the file path.
+os.unlink(path): Remove (delete) the file path (same as os.remove()).
+os.rmdir(path): Remove (delete) the directory path. The directory must be empty.
+os.removedirs(path): Remove (delete) the directory and any parent empty directories.
+os.makedirs(path): Create a directory and any necessary parent directories.
+os.mkdir(path): Create a directory.
+os.chdir(path): Change the current working directory to the specified path.
+os.getcwd(): Get the current working directory.
+os.listdir(path='.'): Return a list of files and directories in the specified directory.
+os.stat(path): Get the status of the specified path.
+os.utime(path, times=None): Set the access and modified times of the file at the specified path.
+os.path.exists(path): Check if the path exists.
+os.path.isfile(path): Check if the path is an existing regular file.
+os.path.isdir(path): Check if the path is an existing directory.
+os.path.isabs(path): Check if the path is an absolute path.
+os.path.join(path1, path2, ...): Join one or more path components intelligently.
+os.path.abspath(path): Return the absolute version of the specified path.
+os.path.basename(path): Return the base name of the specified path.
+os.path.dirname(path): Return the directory name of the specified path.
+os.path.split(path): Split the path into a pair (head, tail).
+os.path.splitext(path): Split the extension from the path.
+os.path.normpath(path): Normalize the path.
+
+
+2. Process Management:
+
+os.system(command): Execute the command in a subshell.
+os.spawnvp(mode, path, args): Execute the program path in a new process.
+os.spawnvpe(mode, file, args, env): Execute the program file in a new process with the specified environment.
+os.execl(path, arg0, arg1, ...): Execute the program path with arguments.
+os.execle(path, arg0, arg1, ..., env): Execute the program path with arguments and the specified environment.
+os.execvp(file, args): Execute the program file with arguments.
+os.execvpe(file, args, env): Execute the program file with arguments and the specified environment.
+os.fork(): Fork a child process.
+os.wait(): Wait for the child process to terminate.
+os.kill(pid, signal): Send a signal to the process with ID pid.
+
+
+3. Environment Variables:
+
+os.environ: A dictionary containing the environment variables of the current process.
+os.getenv(var_name, default=None): Get the value of the environment variable var_name, or default if it's not found.
+os.putenv(var_name, value): Set the value of the environment variable var_name to value.
+os.unsetenv(var_name): Remove the environment variable var_name.
+
+
+4. Miscellaneous:
+
+os.name: The name of the operating system dependent module imported ('posix' for Unix/Linux/MacOS, 'nt' for Windows).
+os.linesep: The string used to separate lines in text files ('\n' for Unix/Linux, '\r\n' for Windows).
+os.sep: The string used to separate directory levels in file paths ('/' for Unix/Linux, '\\' for Windows).
